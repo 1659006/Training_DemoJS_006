@@ -1,0 +1,67 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+using namespace std;
+void sothuc(float f)
+{
+	int  integral, binaryInt = 0, i = 1;
+	float  binaryFract = 0, k = 0.1f, fractional, temp1, binaryTotal;
+	
+
+	//Separating the integral value from the floating point variable
+	integral = (int)f;
+
+	//Separating the fractional value from the variable
+	fractional = f- (int)f;
+
+	//Loop for converting decimal to binary
+	while (integral>0)
+	{
+		binaryInt = binaryInt + integral % 2 * i;
+		i = i * 10;
+		integral = integral / 2;
+	}
+
+	//Loop for converting Fractional value to binary
+	while (k>0.00000000000001)
+	{
+		temp1 = fractional * 2;
+		binaryFract = binaryFract + ((int)temp1)*k;
+		fractional = temp1 - (int)temp1;
+		k = k / 10;
+	}
+	binaryTotal = binaryInt + binaryFract;
+	cout << "so nh? phân: " << binaryTotal << endl;
+	/*float sothuc=0, sophay,tong, temp1, k=0.1*num;
+	
+	int songuyen, a=0, i=1,temp2;
+	songuyen = (int)num;
+	sophay = num - (int)num;
+	while (songuyen > 0)
+	{
+		a = a + songuyen % 2 * i;
+		i = i * 10;
+		songuyen = songuyen / 2;
+	}
+	while (k > 0.000000001)
+	{
+		temp1 = sophay * 2;
+		sothuc = sothuc + ((int)temp1)*k;
+		sophay = temp1 - (int)temp1;
+		k = k / 10;
+
+	}
+	tong = a + sothuc;
+	cout << "sobit" << tong << endl;*/
+
+
+}
+void main()
+{
+	float n ,s;
+	cout << "Nhap vao so n: ";
+	cin >> n;
+	sothuc(n);
+	
+	_getch();
+}
