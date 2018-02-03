@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css" type="text/css" /> 
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="av">
+            May tinh Phan so
+		</div>
+		</div>
+		<form action="#" method="get" accept-charset="utf-8">
+			<div class="form-group">
+				<label>Phan so 1</label>
+				<input type="text" class="form-control" id="PS1" placeholder="Nhap vao phan so 1">
+				<small id="PS1_Description" class="form-text text-muted">Tu so/Mau so</small>
+			</div>
+			<div class="form-group">
+				<label for="Pheptinh">Phep tinh</label>
+				<select id="Pheptinh" class="select">
+					<option value="+">Cong</option>
+					<option value="-">Tru</option>
+					<option value="*">Nhan</option>
+					<option value="/">Chia</option>
+				</select>
+				<small id="Pheptinh_Description" class="form-text text-muted">(+,-,*,/)</small>
+			</div>
+
+			<div class="form-group">
+				<label>Phan so 2</label>
+				<input type="text" class="form-control" id="PS2" placeholder="Nhap vao phan so 2">
+				<small id="PS2_Description" class="form-text text-muted">Tu so/Mau so</small>
+			</div>
+			<div>
+				<button type="button" class="btn btn-primary" onclick="TinhToan()">Tinh Toan</button>
+			</div>
+			<div class="form-group">
+				<label>Ket Qua</label>
+				<input type="text" class="form-control" id="KETQUA" placeholder="Ket qua phep tinh" readonly>
+				<small id="KETQUA_Description" class="form-text text-muted">Ket qua cua phep tinh</small>
+			</div>
+		</form>
+
+	</div>
+	
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.jscrossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+ 	<script src="js/Baitap01.js"></script>
+</body>
+</html>

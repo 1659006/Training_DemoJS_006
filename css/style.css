@@ -1,0 +1,13 @@
+div.av
+{
+	text-align: center;
+	font-size: 48px;
+	background-color: #0000ff;
+	color: #fffffff;
+	border-radius: 10px;
+}
+.select
+{
+	border-radius: 10px;
+	size: 30px;
+}
